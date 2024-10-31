@@ -8,10 +8,9 @@ app_name = 'BobsiMo Minute Recorder'
 #do the compilation
 
 yo=f"""\
-pyinstaller --onefile --windowed \
+pyinstaller --onefile --noconsole \
 --hidden-import=pyaudio --hidden-import=speech_recognition \
--n '{app_name}' -i "./BMT_logo.ico" \
-test2.py
+-n "{app_name}" -i "./BMT_logo.ico" test2.py
 """
 print(yo)
 os.system(yo)
