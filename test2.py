@@ -4,9 +4,10 @@ import speech_recognition as sr
 import threading
 
 class AudioRecorderApp:
-    def __init__(self, root):
+    def __init__(self, root:tk.Tk):
         self.root = root
-        self.root.title("BobsiMo Speech-to-text")
+        self.root.wm_iconbitmap('.\\BMT_logo.ico')
+        self.root.title("BobsiMo Minute Recorder")
         
         # Create UI components
         self.create_widgets()
