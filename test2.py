@@ -6,7 +6,7 @@ import threading
 class AudioRecorderApp:
     def __init__(self, root):
         self.root = root
-        self.root.title("Audio Recorder")
+        self.root.title("BobsiMo Speech-to-text")
         
         # Create UI components
         self.create_widgets()
